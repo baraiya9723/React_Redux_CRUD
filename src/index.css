@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+General Reset
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Container */
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff; /* Primary color */
+  padding: 20px; /* Adjust as needed */
+  height: 80px; /* Fixed height */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  font-size: 1.25rem;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #d4e4ff !important;
+  text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+  height: calc(100vh - 80px - 60px); /* Subtract navbar and footer height */
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px; /* Adjust as needed */
+  height: 60px; /* Fixed height */
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 10px;
+  }
+
+  .footer {
+    height: 50px;
+    padding: 10px;
+    font-size: 0.875rem;
+  }
+
+  .main-content {
+    height: calc(100vh - 60px - 50px); /* Adjust for smaller navbar/footer */
+  }
+}
+
+
+/* Homepage Table */
+.table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #003865;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #b02a37;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+  border-color: #842029;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #d39e00;
+}
+
+.btn-warning:hover {
+  background-color: #d39e00;
+  border-color: #b78105;
+}
+
+/* Forms */
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  color: #495057;
+}
+
+form .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Buttons */
+form button[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
+
+
