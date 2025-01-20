@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import AddPage from './pages/AddPage';
 import EditPage from './pages/EditPage';
-
+import ProfilePage from './pages/Profilepage'; 
 const App = () => {
   return (
     <Router>
@@ -15,7 +15,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/add" element={<AddPage />} />
+          <Route path="/add" element={<AddPage />} />
           <Route path="/edit/:id" element={<EditPage />} />
+          <Route path="/profile" element={<ProfilePage />} />  {/* Add this route */}
         </Routes>
       </div>
       <Footer />

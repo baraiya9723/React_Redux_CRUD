@@ -13,6 +13,7 @@ const NavBar = () => {
           <Nav className="ml-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/add">Add Entry</Nav.Link>
+            <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
